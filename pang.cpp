@@ -7,6 +7,5 @@ int main ()
 {
 std::string words = "Hello my good chum.";
 PrintThis (words+newl);
-PrintThis (start.description());
 }
 
