@@ -12,7 +12,8 @@ class Room
         Room (bool, bool, bool);
         std::string stuffhere (std::string);
         void set_stuffhere ();
-        std::string description ();
+        std::string description();
         void set_descript (std::string);
         };
 
+void userint (Room a);
