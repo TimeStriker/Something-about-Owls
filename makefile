@@ -1,5 +1,5 @@
 all: pang
-pang: pang.o room.o func.o story.o
+pang: pang.o room.o func.o story.o 
 	g++ pang.o room.o func.o story.o -o pang
 pang.o: pang.cpp
 	g++ -c pang.cpp
