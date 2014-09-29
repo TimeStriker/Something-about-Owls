@@ -7,6 +7,6 @@ int main ()
 {
 string words = "Hello my good chum.";
 PrintThis (words+newl);
-cout<<thestart;;
+cout<<thestart+newl;;
 }
 
