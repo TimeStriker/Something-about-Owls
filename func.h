@@ -9,7 +9,7 @@ class Room
         std::string stuff [50], descript;
         public:
         Room ();
-        Room (bool, bool, bool);
+        Room (std::string,std::string z[]);
         std::string stuffhere (std::string);
         void set_stuffhere ();
         std::string description();

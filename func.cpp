@@ -11,11 +11,12 @@ Room::Room ()
 	solved = false;
 	destroyed = false; 
 	};
-Room::Room (bool v, bool s, bool d)
+Room::Room (std::string in,std::string items[])
 	{
-	visited = v;
-	solved = s;
-	destroyed = d;
+	int a;
+	descript=in;
+	for (a=0;a<50;++a)
+		{stuff[a]=items[a];};
 	};
 void Room::set_descript (std::string a)
 	{

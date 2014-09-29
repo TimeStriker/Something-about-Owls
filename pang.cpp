@@ -1,7 +1,7 @@
 #include <vector>
 #include <iostream>
 #include "func.h"
-#include "story.h"
+#include "room.h"
 using namespace std;
 int main ()
 {
