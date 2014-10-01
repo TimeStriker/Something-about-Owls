@@ -1,8 +1,9 @@
 #pragma once
 #include <iostream>
+#include <vector>
+void Initialise ();
 void PrintThis (std::string a);
 const char newl = '\n';
-
 class Room
         {
         bool visited, destroyed, solved;
@@ -15,5 +16,12 @@ class Room
         std::string description();
         void set_descript (std::string);
         };
-
+class Object
+	{
+	std::string descript;
+	public:
+	void set_descript ();
+	std::string description();
+	Object (std::string a);
+	};
 void userint (Room a);
