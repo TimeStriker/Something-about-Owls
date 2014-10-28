@@ -1,4 +1,6 @@
 #pragma once
+#define STORY
+#ifdef STORY
 #include <iostream>
 using namespace std;
 
@@ -10,3 +12,4 @@ it, which is awfully confusing so you look away.";
 string ball = "You find it seriously difficult to look at it, you lower your gaze.";
 string Geass = "The world around you begins to ebb away...";
 
+#endif

@@ -4,8 +4,10 @@
 using namespace std;
 int main ()
 {
-string words = "Hello my good chum.";
-PrintThis (words+newl);
-PrintThis (thestart+newl+cube_1.description());
-userint (cube_1);
+PrintThis("testing 1,2,3 ");
+string words = "Hello my 'good' \"chum.\"";
+PrintThis(words);
+cout<<thestart<<newl;
+PrintThis("Because I know");
+userint (ropoi);
 }

@@ -1,4 +1,6 @@
 #pragma once
+#define FUNC
+#ifdef FUNC
 #include <iostream>
 #include <vector>
 void Initialise ();
@@ -24,4 +26,5 @@ class Object
 	std::string description();
 	Object (std::string a);
 	};
-void userint (Room a);
+void userint (Room* a);
+#endif

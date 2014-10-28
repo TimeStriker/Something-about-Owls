@@ -10,7 +10,7 @@ void Initialise ()
 	};
 void PrintThis (std::string a)
 {
-std::cout<<a;
+std::cout<<a<<'\n';
 };
 Room::Room ()
 	{
@@ -44,26 +44,23 @@ Object::Object (std::string a)
 
 void crunch (std::string in)
 {
-	if ("h"==in)
+	if ("help"==in)
 		{
 		PrintThis ("You can use: /n help: /n use:");
 		};
 
 };
 
-void userint (Room a)
+void userint (Room* a)
 {
 bool running = true;
-Room * activeroom  = &a;
+Room * activeroom;
 std::string input;
-PrintThis ("nugget");
-	while (running = true);
+PrintThis("nugget");
+	while (running==true)
 	{
-	std::cin.ignore();
-	PrintThis (a.description());
-	PrintThis ("nugget");
-	std::getline (std::cin,input);
-	std::cout<<input;
+	PrintThis(a->description());
+	std::getline(std::cin,input);
 	crunch (input);
 	};
 };
