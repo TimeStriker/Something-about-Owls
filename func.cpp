@@ -1,4 +1,4 @@
-#include "func.h"
+ #include "func.h"
 #include <vector>
 #include <iostream>
 #include <sstream>
@@ -44,24 +44,47 @@ Object::Object (std::string a)
 
 void crunch (std::string in)
 {
-	if ("help"==in)
+char word[50];
+std::string words;
+int counter=0;
+	for(int oc=0;oc<in.size();oc++)
+	{
+		if (in[oc] != ' ')
 		{
-		PrintThis ("You can use: /n help: /n use:");
-		};
-
+		word[counter]=in[oc];
+		++counter;
+		}
+		else if (counter>0)
+		{
+		word[oc]='\0';
+		words.clear();
+		words = word;
+			if (words=="help")
+				{std::cout<<"You can use:\n help:\n use:"<<'\n';}
+			else {std::cout << ">>look";};
+		}
+		else {counter=0;};
+	};
 };
 
 void userint (Room* a)
 {
 bool running = true;
-Room * activeroom;
+Room * activeroom=a;
 std::string input;
-PrintThis("nugget");
 	while (running==true)
 	{
-	PrintThis(a->description());
+	PrintThis(activeroom->description());
+	std::cout<< ">>"<<newl;
 	std::getline(std::cin,input);
 	crunch (input);
 	};
+};
+void stall ()
+{
+	do
+	{
+PrintThis(">>PRESS ENTER YOU FOOL<<");
+	} while (std::cin.get() != '\n');
 };
 

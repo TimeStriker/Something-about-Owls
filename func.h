@@ -27,4 +27,5 @@ class Object
 	Object (std::string a);
 	};
 void userint (Room* a);
+void stall();
 #endif
