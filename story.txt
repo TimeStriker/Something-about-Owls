@@ -5,3 +5,20 @@ WOWOWOWOWOW.
 /0/
 /intro
 Hello there.
+/0/
+/char_eye
+
+/0/
+/char_arm
+
+/0/
+/char_leg
+
+/0/
+/char_hand
+
+/0/
+*ROOM_1*
+/r_cube
+
+/0/

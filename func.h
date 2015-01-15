@@ -7,6 +7,7 @@ class Object {
 	std::vector<std::string> desc, cmd; //Additional printing stuff
 	bool room; //If this is a room or Object
 	std::vector<int> counters; //Various 'counters' that track progress
+	std::vector<Object> items; //Stuff in the room 'Objects'
 public:
 	Object (std::string n, std::string l ,bool r) {name=n; room=r; lore=l;}
 	void Load (std::vector<std::string> d, std::vector<std::string> c)
@@ -17,7 +18,7 @@ public:
 	std::string Name (void) {return name;}
 	std::string Lore (void) {return lore;}
 	std::string Trigger (std::string);
-
+	void Item (Object a) {items.push_back(a);}
 	};
 template <class type, class vec_type>
 bool Find (type stuff, std::vector<vec_type> vec);
@@ -25,3 +26,5 @@ bool Find (type stuff, std::vector<vec_type> vec);
 void Init ();
 
 std::string Read (std::string);
+
+void Navi (Object room);

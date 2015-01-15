@@ -7,3 +7,5 @@ func.o: func.cpp
 	g++ -c func.cpp
 room.o: room.cpp
 	g++ -c room.cpp
+navi.o: navi.cpp
+	g++ -c navi.cpp

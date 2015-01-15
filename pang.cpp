@@ -2,5 +2,5 @@
 int main ()
 {
 Init ();
-std::cout<<Read ("/DEFAULT");
+std::cout<<Read ("/intro");
 }
