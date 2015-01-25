@@ -1,14 +1,15 @@
 #include "room.h"
 //Makes rooms and objects
-void Init ()
+World::World () : 
+//Rooms
+r_cube("Cube Room",Read("/r_cube"),true)
+
+//Items
+, cube("Cube", Read("/i_cube"),false)
+
 {
-//Rooms 'n stuff
-Object r_cube ("Cube Room",Read("/r_cube"),true);
-
-//Items 'n stuff
-Object cube ("Cube",Read("/DEFAULT"),false);
-
 //Items -> rooms
+
 r_cube.Item (cube);
 };
 
@@ -37,3 +38,7 @@ std::string Read (std::string id)
 	}
 else {return "HELL NO";}
 };
+
+//std::map<int,Object> World ;
+//World [1] = object something 
+//World [1]

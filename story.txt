@@ -18,7 +18,13 @@ Hello there.
 /char_hand
 
 /0/
+char_mind
+
+/0/
 *ROOM_1*
 /r_cube
+All the walls are white and feel extremely flat to the touch.
+/0/
+/i_cube
 
 /0/

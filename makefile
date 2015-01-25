@@ -1,6 +1,6 @@
 all: pang
-pang: pang.o func.o room.o
-	g++ pang.o room.o func.o -o pang
+pang: pang.o func.o room.o navi.o
+	g++ room.o func.o navi.o pang.o -o pang
 pang.o: pang.cpp
 	g++ -c pang.cpp
 func.o: func.cpp

@@ -2,6 +2,8 @@
 #include <iostream>
 #include <vector>
 //Defining Rooms and Objects
+
+
 class Object {
 	std::string name, lore; //Objects and Rooms need names and lore :P
 	std::vector<std::string> desc, cmd; //Additional printing stuff
@@ -19,12 +21,25 @@ public:
 	std::string Lore (void) {return lore;}
 	std::string Trigger (std::string);
 	void Item (Object a) {items.push_back(a);}
+
 	};
+
+std::string Read (std::string);
+
+class World {
+
+	public:
+//Rooms
+World ();
+Object r_cube;
+Object cube;
+	};
+
 template <class type, class vec_type>
 bool Find (type stuff, std::vector<vec_type> vec);
 
 void Init ();
 
-std::string Read (std::string);
-
 void Navi (Object room);
+
+void Crunch (std::string, Object*,bool*);
