@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <vector>
+#include <map>
 //Defining Rooms and Objects
 
 
@@ -29,10 +30,11 @@ std::string Read (std::string);
 class World {
 
 	public:
-//Rooms
-World ();
+World();
 Object r_cube;
 Object cube;
+std::map<int, Object> world_map; //Mess around later
+
 	};
 
 template <class type, class vec_type>
@@ -40,6 +42,6 @@ bool Find (type stuff, std::vector<vec_type> vec);
 
 void Init ();
 
-void Navi (Object room);
+void Navi (Object room, World*pworld);
 
 void Crunch (std::string, Object*,bool*);

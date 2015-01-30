@@ -1,6 +1,7 @@
 #include "room.h"
+//NB: Add Maps and such
 //Makes rooms and objects
-World::World () : 
+World::World() :
 //Rooms
 r_cube("Cube Room",Read("/r_cube"),true)
 

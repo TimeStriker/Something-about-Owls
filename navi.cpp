@@ -1,7 +1,7 @@
 #include "navi.h"
 #include <iostream>
 //A 'Navigator' of sorts
-void Navi (Object room)
+void Navi (Object room, World*pworld)
 {
 bool running = true;
 Object *active_r = &room; //Pointer to change room from anywhere
